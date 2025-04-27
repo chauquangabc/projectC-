@@ -1,0 +1,11 @@
+C:\Users\admin\source\repos\ProjectQuizz\bin\Debug\ProjectQuizz.exe.config
+C:\Users\admin\source\repos\ProjectQuizz\bin\Debug\ProjectQuizz.exe
+C:\Users\admin\source\repos\ProjectQuizz\bin\Debug\ProjectQuizz.pdb
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.Properties.Resources.resources
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.exe
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.pdb
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.frmLogin.resources
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.FrmRegister.resources

@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|C:\\Users\\admin\\source\\repos\\ProjectQuizz\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|solutionrelative:frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|C:\\Users\\admin\\source\\repos\\ProjectQuizz\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|C:\\Users\\admin\\source\\repos\\ProjectQuizz\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|C:\\Users\\admin\\source\\repos\\ProjectQuizz\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|solutionrelative:frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|C:\\Users\\admin\\source\\repos\\ProjectQuizz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04246132-5443-480E-8811-6B03E9AE465B}|ProjectQuizz.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmRegister.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmRegister.cs",
+              "RelativeDocumentMoniker": "FrmRegister.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmRegister.cs [Design]",
+              "RelativeToolTip": "FrmRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:19:36.264Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmRegister.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmRegister.cs",
+              "RelativeDocumentMoniker": "FrmRegister.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmRegister.cs",
+              "RelativeToolTip": "FrmRegister.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:21:19.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "FrmLogin.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmLogin.cs",
+              "RelativeToolTip": "FrmLogin.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:51:24.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "FrmLogin.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:49:18.614Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\ProjectQuizz\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:51:31.003Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
