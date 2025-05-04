@@ -14,6 +14,7 @@ namespace ProjectQuizz
     {
         List<Quizz> listQizz = new List<Quizz>();
         List<User> listUsers = new List<User>();
+        List<Question> listQuestions = new List<Question>();
 
         public frmAdmin()
         {
@@ -53,13 +54,19 @@ namespace ProjectQuizz
 
             listUsers.Add(new User("U1", "admin" ,"abc@gmail.com" , "123456","Admin"));
             listUsers.Add(new User("U2", "user1","xyz@gmail.com", "123456","User"));
-            datagrdUserView.Visible = false; 
+            datagrdUserView.Visible = false;
+
+            listQuestions.Add(new Question("Q1", "ABC", new List<string> { "1","2"}, new List<string> { "Dung","Sai","Not given","All Correct"}));
+            List<QuestionView> displayList = listQuestions.Select(q => new QuestionView(q)).ToList();
+            datagrdQuestionView.DataSource = displayList;
+            datagrdQuestionView.Visible = false;
 
 
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (datagrdQuizzView.Visible) {
+            if (datagrdQuizzView.Visible)
+            {
                 AddQuizz frmAdd = new AddQuizz(listQizz);
                 frmAdd.ShowDialog();
                 datagrdQuizzView.DataSource = null;
@@ -71,6 +78,12 @@ namespace ProjectQuizz
                 frmAdd.ShowDialog();
                 datagrdUserView.DataSource = null;
                 datagrdUserView.DataSource = listUsers;
+            }
+            else if (datagrdQuestionView.Visible) {
+                AddQuestion addQuestion = new AddQuestion(listQizz, listQuestions);
+                addQuestion.ShowDialog();
+                datagrdQuestionView.DataSource = null;
+                datagrdQuestionView.DataSource = listQuestions.Select(q => new QuestionView(q)).ToList();
             }
 
         }
@@ -100,6 +113,20 @@ namespace ProjectQuizz
                         listUsers.RemoveAt(indexUser);
                         datagrdUserView.DataSource = null;
                         datagrdUserView.DataSource = listUsers;
+                    }
+                }
+            }
+
+            else if (datagrdQuestionView.Visible)
+            {
+                if(datagrdQuestionView.CurrentRow != null)
+                {
+                    int indexQuestion = datagrdQuestionView.CurrentRow.Index;
+                    if (indexQuestion >= 0 && indexQuestion < listQuestions.Count)
+                    {
+                        listQuestions.RemoveAt(indexQuestion);
+                        datagrdQuestionView.DataSource = null;
+                        datagrdQuestionView.DataSource = listQuestions.Select(q => new QuestionView(q)).ToList();
                     }
                 }
             }
@@ -137,6 +164,27 @@ namespace ProjectQuizz
                     }
                 }
             }
+
+            else if (datagrdQuestionView.Visible)
+            {
+                if (datagrdQuestionView.CurrentRow != null)
+                {
+                    int index = datagrdQuestionView.CurrentRow.Index;
+                    if (index >= 0 && index < listQuestions.Count)
+                    {
+                        // Lấy câu hỏi cần chỉnh sửa
+                        Question questionToEdit = listQuestions[index];
+
+                        // Mở form UpdateQuestion và truyền dữ liệu vào
+                        UpdateQuestion updateForm = new UpdateQuestion(listQizz, listQuestions, questionToEdit, index);
+                        updateForm.ShowDialog();
+
+                        // Cập nhật lại DataGridView sau khi chỉnh sửa
+                        datagrdQuestionView.DataSource = null;
+                        datagrdQuestionView.DataSource = listQuestions.Select(q => new QuestionView(q)).ToList();
+                    }
+                }
+            }
            
 
         }
@@ -144,6 +192,7 @@ namespace ProjectQuizz
         {
             datagrdQuizzView.Visible = false;
             datagrdUserView.Visible = true;
+            datagrdQuestionView.Visible = false;
 
             datagrdUserView.DataSource = null;
             datagrdUserView.DataSource = listUsers;
@@ -153,9 +202,24 @@ namespace ProjectQuizz
         {
             datagrdQuizzView.Visible = true;
             datagrdUserView.Visible = false;
+            datagrdQuestionView.Visible= false;
 
             datagrdQuizzView.DataSource = null;
             datagrdQuizzView.DataSource = listQizz;
+
+        }
+
+        private void btnQuestion_Click(object sender, EventArgs e)
+        {
+            datagrdQuizzView.Visible = false;
+            datagrdUserView.Visible = false;
+            datagrdQuestionView.Visible = true;
+
+            datagrdQuestionView.DataSource = null;
+            datagrdQuestionView.DataSource = listQuestions.Select(q => new QuestionView(q)).ToList();
+
+            datagrdQuestionView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            datagrdQuestionView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
         }
 
@@ -163,5 +227,7 @@ namespace ProjectQuizz
         {
 
         }
+
+        
     }
 }

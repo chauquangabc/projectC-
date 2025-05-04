@@ -31,3 +31,5 @@ C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.AddQuizz.resourc
 C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.UpdateQuizz.resources
 C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.AddUser.resources
 C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.UpdateUser.resources
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.AddQuestion.resources
+C:\Users\admin\source\repos\ProjectQuizz\obj\Debug\ProjectQuizz.UpdateQuestion.resources

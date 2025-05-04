@@ -34,5 +34,10 @@ namespace ProjectQuizz
             this.Close();
 
         }
+
+        private void Name_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

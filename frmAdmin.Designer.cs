@@ -31,24 +31,28 @@ namespace ProjectQuizz
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuestion = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnQuizz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.datagrdQuestionView = new System.Windows.Forms.DataGridView();
+            this.datagrdUserView = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.datagrdQuizzView = new System.Windows.Forms.DataGridView();
-            this.datagrdUserView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagrdQuizzView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrdQuestionView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrdUserView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrdQuizzView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btnQuestion);
             this.panel1.Controls.Add(this.btnUser);
             this.panel1.Controls.Add(this.btnQuizz);
             this.panel1.Controls.Add(this.label1);
@@ -56,6 +60,16 @@ namespace ProjectQuizz
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(284, 589);
             this.panel1.TabIndex = 0;
+            // 
+            // btnQuestion
+            // 
+            this.btnQuestion.Location = new System.Drawing.Point(79, 311);
+            this.btnQuestion.Name = "btnQuestion";
+            this.btnQuestion.Size = new System.Drawing.Size(105, 23);
+            this.btnQuestion.TabIndex = 3;
+            this.btnQuestion.Text = "Question";
+            this.btnQuestion.UseVisualStyleBackColor = true;
+            this.btnQuestion.Click += new System.EventHandler(this.btnQuestion_Click);
             // 
             // btnUser
             // 
@@ -90,6 +104,7 @@ namespace ProjectQuizz
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel2.Controls.Add(this.datagrdQuestionView);
             this.panel2.Controls.Add(this.datagrdUserView);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
@@ -99,6 +114,29 @@ namespace ProjectQuizz
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(548, 589);
             this.panel2.TabIndex = 1;
+            // 
+            // datagrdQuestionView
+            // 
+            this.datagrdQuestionView.BackgroundColor = System.Drawing.SystemColors.Info;
+            this.datagrdQuestionView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagrdQuestionView.Location = new System.Drawing.Point(15, 24);
+            this.datagrdQuestionView.Name = "datagrdQuestionView";
+            this.datagrdQuestionView.RowHeadersWidth = 51;
+            this.datagrdQuestionView.RowTemplate.Height = 24;
+            this.datagrdQuestionView.Size = new System.Drawing.Size(518, 436);
+            this.datagrdQuestionView.TabIndex = 5;
+            // 
+            // datagrdUserView
+            // 
+            this.datagrdUserView.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.datagrdUserView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagrdUserView.Location = new System.Drawing.Point(15, 24);
+            this.datagrdUserView.Name = "datagrdUserView";
+            this.datagrdUserView.RowHeadersWidth = 51;
+            this.datagrdUserView.RowTemplate.Height = 24;
+            this.datagrdUserView.Size = new System.Drawing.Size(518, 436);
+            this.datagrdUserView.TabIndex = 4;
+            this.datagrdUserView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrdUserView_CellContentClick);
             // 
             // btnDelete
             // 
@@ -140,18 +178,6 @@ namespace ProjectQuizz
             this.datagrdQuizzView.Size = new System.Drawing.Size(437, 330);
             this.datagrdQuizzView.TabIndex = 0;
             // 
-            // datagrdUserView
-            // 
-            this.datagrdUserView.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.datagrdUserView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagrdUserView.Location = new System.Drawing.Point(15, 24);
-            this.datagrdUserView.Name = "datagrdUserView";
-            this.datagrdUserView.RowHeadersWidth = 51;
-            this.datagrdUserView.RowTemplate.Height = 24;
-            this.datagrdUserView.Size = new System.Drawing.Size(518, 436);
-            this.datagrdUserView.TabIndex = 4;
-            this.datagrdUserView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrdUserView_CellContentClick);
-            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -166,8 +192,9 @@ namespace ProjectQuizz
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.datagrdQuizzView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrdQuestionView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrdUserView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrdQuizzView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,5 +211,7 @@ namespace ProjectQuizz
         private Button btnAdd;
         private Button btnUser;
         private DataGridView datagrdUserView;
+        private Button btnQuestion;
+        private DataGridView datagrdQuestionView;
     }
 }

@@ -34,6 +34,10 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.comboBoxRole = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtId
@@ -84,11 +88,51 @@
             this.comboBoxRole.TabIndex = 6;
             this.comboBoxRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxRole_SelectedIndexChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(93, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(83, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(86, 197);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Email";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(72, 252);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Password";
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtPassword);
@@ -111,5 +155,9 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox comboBoxRole;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
